@@ -42,7 +42,7 @@ const PostDetailsRelatedImages = ({ post }) => {
         </NoImageFoundBox>
       ) : (
         <>
-          <h1 className="text-copy text-2xl mb-2.5">Related images</h1>
+          <h1 className="text-copy text-2xl mb-2.5 px-2.5">Related images</h1>
 
           <PhotosMasonryGrid posts={allPosts} />
 
