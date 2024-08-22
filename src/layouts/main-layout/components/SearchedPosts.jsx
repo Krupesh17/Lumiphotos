@@ -50,7 +50,7 @@ const SearchedPosts = () => {
   return (
     <section className="bg-transparent sm:px-2.5 max-w-[1300px] mx-auto">
       <div className="my-10">
-        <h1 className="text-copy text-5xl">
+        <h1 className="text-copy text-5xl px-2.5">
           {searchTerm.replace(/\-/g, " ").charAt(0).toUpperCase() +
             searchTerm.replace(/\-/g, " ").slice(1)}
         </h1>
