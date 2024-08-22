@@ -35,7 +35,7 @@ const AccountTopBar = () => {
     try {
       // 🔵 Change this URL at a time of deployment of this project
       const verification = await createEmailVerification(
-        "http://localhost:5173/verification"
+        "https://lumiphotos.vercel.app//verification"
       );
 
       if (!verification)
