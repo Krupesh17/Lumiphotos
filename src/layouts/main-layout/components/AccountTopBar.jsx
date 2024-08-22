@@ -33,9 +33,8 @@ const AccountTopBar = () => {
 
   const handleEmailVerification = async () => {
     try {
-      // 🔵 Change this URL at a time of deployment of this project
       const verification = await createEmailVerification(
-        "https://lumiphotos.vercel.app//verification"
+        `${window.location.origin}/verification`
       );
 
       if (!verification)
