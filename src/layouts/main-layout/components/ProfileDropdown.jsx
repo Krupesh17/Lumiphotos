@@ -15,10 +15,15 @@ import { useSignOutAccount } from "../../../react-query/queries";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../../redux/features/authSlice";
 import { updateTheme } from "../../../redux/features/preferenceSlice";
+import { toast } from "react-toastify";
 
 const ProfileDropdown = ({ setIsCreatePostModalOpen }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const accountData = useSelector(
+    (state) => state?.auth?.authData?.accountData
+  );
 
   const authData = useSelector((state) => state.auth.authData);
   const theme = useSelector((state) => state?.preference?.theme);
@@ -122,7 +127,15 @@ const ProfileDropdown = ({ setIsCreatePostModalOpen }) => {
         <ButtonFilled
           buttonBlock={true}
           className="text-left"
-          onClick={() => setIsCreatePostModalOpen(true)}
+          onClick={() => {
+            if (accountData?.emailVerification) {
+              setIsCreatePostModalOpen(true);
+            } else {
+              toast.error(
+                "Verify your account to upload your photos to Lumiphotos."
+              );
+            }
+          }}
         >
           <div className="flex items-center gap-1.5">
             <ArrowUpTrayIcon
