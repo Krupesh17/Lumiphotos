@@ -283,7 +283,7 @@ const CreatePostModal = ({ isOpen, setIsOpen }) => {
                 isFilePreviewLoading ||
                 isPostCreating ||
                 isFileDeleting) &&
-              "btn-loading"
+              "btn-primary-loading"
             }`}
             disabled={
               isFileUploading ||

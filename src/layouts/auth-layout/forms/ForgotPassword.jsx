@@ -80,7 +80,7 @@ const ForgotPassword = () => {
       <ButtonFilled
         type="submit"
         buttonBlock={true}
-        className={`mb-2.5 ${isCreatingPasswordRecovery && "btn-loading"}`}
+        className={`mb-2.5 ${isCreatingPasswordRecovery && "btn-primary-loading"}`}
       >
         <div
           className={`${isCreatingPasswordRecovery && "invisible opacity-0"}`}

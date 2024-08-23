@@ -184,7 +184,7 @@ const SignUp = () => {
         buttonBlock={true}
         className={`mb-5 ${
           (isUsernamesScanning || isCreatingAccount || isSignInPending) &&
-          "btn-loading"
+          "btn-primary-loading"
         }`}
       >
         <div

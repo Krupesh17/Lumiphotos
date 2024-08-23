@@ -229,6 +229,10 @@
     @apply after:content-[''] after:absolute after:inset-0 after:m-auto after:border-2 after:border-border/70 after:h-5 after:w-5 after:border-t-copy after:rounded-full after:animate-spin;
   }
 
+  .btn-primary-loading {
+    @apply after:content-[''] after:absolute after:inset-0 after:m-auto after:border-2 after:border-border/70 after:h-5 after:w-5 after:border-t-primary-content after:rounded-full after:animate-spin;
+  }
+
   .notification-dot {
     @apply before:content-[''] before:absolute before:top-0 before:right-0.5 before:bg-error before:w-2 before:h-2 before:animate-pulse before:rounded-full;
   }

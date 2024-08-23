@@ -99,7 +99,7 @@ const ResetPassword = () => {
           <ButtonFilled
             type="submit"
             buttonBlock={true}
-            className={`${isResettingPassword && "btn-loading"}`}
+            className={`${isResettingPassword && "btn-primary-loading"}`}
           >
             <div className={`${isResettingPassword && "invisible opacity-0"}`}>
               Submit

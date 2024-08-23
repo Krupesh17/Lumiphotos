@@ -79,7 +79,7 @@ const EditProfileForm = () => {
         <ButtonFilled
           type="submit"
           buttonBlock={true}
-          className={`mb-5 ${isUserUpdatePending && "btn-loading"}`}
+          className={`mb-5 ${isUserUpdatePending && "btn-primary-loading"}`}
         >
           <div className={`${isUserUpdatePending && "invisible opacity-0"}`}>
             Update account

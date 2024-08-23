@@ -34,7 +34,10 @@ const ChangePasswordForm = () => {
 
       const response = await changePassword(data);
 
-      if (!response) throw new Error("The old password you entered is incorrect. Please try again.");
+      if (!response)
+        throw new Error(
+          "The old password you entered is incorrect. Please try again."
+        );
 
       toast.success("Your password has been changed successfully.");
     } catch (error) {
@@ -78,8 +81,14 @@ const ChangePasswordForm = () => {
         </div>
       </div>
 
-      <ButtonFilled type="submit" buttonBlock={true} className={`${isPasswordUpdating && "btn-loading"}`}>
-        <div className={`${isPasswordUpdating && "invisible opacity-0"}`}>Change Password</div>
+      <ButtonFilled
+        type="submit"
+        buttonBlock={true}
+        className={`${isPasswordUpdating && "btn-primary-loading"}`}
+      >
+        <div className={`${isPasswordUpdating && "invisible opacity-0"}`}>
+          Change Password
+        </div>
       </ButtonFilled>
     </form>
   );

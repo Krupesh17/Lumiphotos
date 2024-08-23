@@ -124,7 +124,7 @@ const ChangeEmailForm = () => {
       <ButtonFilled
         type="submit"
         className={`mb-5 ${
-          (isEmailUpdating || isUserUpdating) && "btn-loading"
+          (isEmailUpdating || isUserUpdating) && "btn-primary-loading"
         }`}
         buttonBlock={true}
       >

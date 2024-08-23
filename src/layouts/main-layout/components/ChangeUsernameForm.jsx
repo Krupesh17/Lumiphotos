@@ -131,7 +131,7 @@ const ChangeUsernameForm = () => {
         type="submit"
         className={`mb-5 ${
           (isUsernamesScanning || isNameUpdating || isUserUpdating) &&
-          "btn-loading"
+          "btn-primary-loading"
         }`}
         buttonBlock={true}
       >

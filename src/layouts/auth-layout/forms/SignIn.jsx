@@ -101,7 +101,7 @@ const SignIn = () => {
       <ButtonFilled
         type="submit"
         buttonBlock={true}
-        className={`mb-2.5 ${isSignInPending && "btn-loading"}`}
+        className={`mb-2.5 ${isSignInPending && "btn-primary-loading"}`}
       >
         <div className={`${isSignInPending && "invisible opacity-0"}`}>
           Sign in

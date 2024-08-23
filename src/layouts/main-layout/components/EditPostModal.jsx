@@ -215,7 +215,7 @@ const EditPostModal = ({ isOpen, setIsOpen, post }) => {
             <ButtonFilled
               type="submit"
               title="Update info"
-              className={`${isPostInfoUpdating && "btn-loading"}`}
+              className={`${isPostInfoUpdating && "btn-primary-loading"}`}
               disabled={isPostInfoUpdating}
             >
               <span
