@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import ProfilePictureBox from "./ProfilePictureBox";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { EditProfileValidation } from "../../../../validations";
