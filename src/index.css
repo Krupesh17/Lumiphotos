@@ -288,4 +288,12 @@
   .rc-slider-dot {
     @apply border-primary-dark;
   }
+
+  .glitch-before {
+    @apply before:content-[attr(data-glitch)] before:absolute before:top-0 before:-left-[2px] before:[text-shadow:-1px_0_#00ffff] before:w-full before:text-white before:bg-transparent before:overflow-hidden before:[clip:rect(0,_900px,_0,_0)] before:animate-noise-before;
+  }
+
+  .glitch-after {
+    @apply after:content-[attr(data-glitch)] after:absolute after:top-0 after:left-[2px] after:[text-shadow:1px_0_#ff00ff] after:w-full after:text-white after:bg-transparent after:overflow-hidden after:[clip:rect(0,_900px,_0,_0)] after:animate-noise-after;
+  }
 }
