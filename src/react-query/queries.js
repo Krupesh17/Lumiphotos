@@ -601,3 +601,11 @@ export const useGetFeaturedTagBySlug = (slug) => {
     enabled: !!slug,
   });
 };
+
+export const useGetWebsitePropertyByPropertyName = (propertyName) => {
+  return useQuery({
+    queryKey: [QUERY_KEYS.GET_WEBSITE_PROPERTY_BY_PROPERTY_NAME, propertyName],
+    queryFn: () =>
+      websiteService.getWebsitePropertyByPropertyName(propertyName),
+  });
+};

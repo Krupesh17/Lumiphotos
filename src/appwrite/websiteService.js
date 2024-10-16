@@ -45,7 +45,7 @@ export class WebsiteService {
 
       if (response.documents.length === 0) {
         throw new Error(
-          "An error occurred while attempting to retrieve the featured tag it's by tagName."
+          "An error occurred while attempting to retrieve the featured tag by it's tagName."
         );
       }
 
@@ -53,10 +53,34 @@ export class WebsiteService {
     } catch (error) {
       console.error(
         error.message ||
-          "An error occurred while attempting to retrieve the featured tag it's by tagName."
+          "An error occurred while attempting to retrieve the featured tag by it's tagName."
+      );
+    }
+  };
+
+  getWebsitePropertyByPropertyName = async (propertyName) => {
+    try {
+      const response = await this.databases.listDocuments(
+        appConfig.databaseId,
+        appConfig.websitePropertyCollectionId,
+        [Query.equal("propertyName", propertyName)]
+      );
+
+      if (response.documents.length === 0) {
+        throw new Error(
+          "An error occurred while attempting to retrieve the website property by it's propertyName."
+        );
+      }
+
+      return response.documents[0];
+    } catch (error) {
+      console.error(
+        error.message ||
+          "An error occurred while attempting to retrieve the website property by it's propertyName."
       );
     }
   };
 }
+
 const websiteService = new WebsiteService();
 export default websiteService;

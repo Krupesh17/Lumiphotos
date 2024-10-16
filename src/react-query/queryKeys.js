@@ -13,6 +13,7 @@ const QUERY_KEYS = {
   GET_POST_BY_ID: "getPostById",
   GET_ALL_FEATURED_TAGS: "getAllFeaturedTags",
   GET_FEATURED_TAG_BY_SLUG: "getFeaturedTagBySlug",
+  GET_WEBSITE_PROPERTY_BY_PROPERTY_NAME: "getWebsitePropertyByPropertyName",
 };
 
 export default QUERY_KEYS;
