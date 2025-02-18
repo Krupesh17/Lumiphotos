@@ -170,6 +170,7 @@ const SignUp = () => {
           label="Password"
           name="password"
           control={control}
+          autoComplete="on"
           placeholder="Password"
         />
         {errors.password && (

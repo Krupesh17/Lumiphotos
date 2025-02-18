@@ -81,6 +81,7 @@ const SignIn = () => {
           name="password"
           control={control}
           placeholder="Password"
+          autoComplete="on"
         />
         {errors.password && (
           <ErrorMessageField className="mt-2">

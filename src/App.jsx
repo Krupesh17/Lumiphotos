@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import AuthLayout from "./layouts/auth-layout/AuthLayout";
 import {
   ForgotPassword,
+  GuestSignIn,
   ResetPassword,
   SignIn,
   SignUp,
@@ -71,6 +72,7 @@ const App = () => {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/guest-sign-in" element={<GuestSignIn />} />
       </Route>
       <Route element={<MainLayout />}>
         <Route index element={<Explore />} />
